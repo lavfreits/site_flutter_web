@@ -9,9 +9,13 @@ Este é um projeto de exemplo desenvolvido em Flutter para explorar a responsivi
 
 ## Capturas de Tela
 ![Captura de tela 1](Captura%20de%20tela%201.png)
+
 ![Captura de tela 2](Captura%20de%20tela%202.png)
+
 ![Captura de tela 3](Captura%20de%20tela%203.png)
+
 ![Captura de tela 4](Captura%20de%20tela%204.png)
+
 ![Captura de tela 5](Captura%20de%20tela%205.png)
 
 
@@ -29,11 +33,3 @@ Para usar este projeto, siga estas etapas:
 1. Clone este repositório.
 2. Execute `flutter pub get` para instalar as dependências.
 3. Execute o aplicativo em seu navegador de preferência.
-
-## Aprendizados
-
-Durante o desenvolvimento deste projeto, eu aprendi:
-
-- Como implementar layouts responsivos em Flutter utilizando breakpoints.
-- Como desenvolver para a web com Flutter, adaptando componentes para diferentes plataformas.
-- A importância de uma interface de usuário adaptável para melhorar a experiência do usuário em dispositivos variados.
