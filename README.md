@@ -1,16 +1,39 @@
-# site_flutter_web
+# Flutter Web Site
 
-A Flutter project to study responsiveness and developing for web.
+Este é um projeto de exemplo desenvolvido em Flutter para explorar a responsividade e o desenvolvimento web com Flutter. Ele demonstra como criar uma interface de usuário que se adapta a diferentes tamanhos de tela, utilizando breakpoints para ajustar o layout e exibir componentes de forma apropriada em dispositivos móveis e desktop.
 
-## Getting Started
+## Recursos
 
-This project is a starting point for a Flutter application.
+- **Responsividade**: O layout se ajusta automaticamente com base na largura da tela, utilizando breakpoints.
+- **Layout Builder**: Uso do widget `LayoutBuilder` para construir layouts responsivos dinamicamente.
 
-A few resources to get you started if this is your first Flutter project:
+## Capturas de Tela
+![Captura de tela 1](Captura%20de%20tela%201.png)
+![Captura de tela 2](Captura%20de%20tela%202.png)
+![Captura de tela 3](Captura%20de%20tela%203.png)
+![Captura de tela 4](Captura%20de%20tela%204.png)
+![Captura de tela 5](Captura%20de%20tela%205.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Estrutura do Projeto
+
+- `home_page.dart`: Contém a estrutura principal da página inicial.
+- `app_bar_mobile.dart` e `app_bar_web.dart`: Implementações específicas da AppBar para dispositivos móveis e web.
+- `advantages_section.dart`, `courses_section.dart` e `top_section.dart`: Seções diferentes da página inicial, cada uma com seu próprio layout e conteúdo, alteradas de acordo com os breakpoints.
+- `breakpoints.dart`: Define os pontos de quebra utilizados para ajustar a responsividade do layout.
+
+## Como Usar
+
+Para usar este projeto, siga estas etapas:
+
+1. Clone este repositório.
+2. Execute `flutter pub get` para instalar as dependências.
+3. Execute o aplicativo em seu navegador de preferência.
+
+## Aprendizados
+
+Durante o desenvolvimento deste projeto, eu aprendi:
+
+- Como implementar layouts responsivos em Flutter utilizando breakpoints.
+- Como desenvolver para a web com Flutter, adaptando componentes para diferentes plataformas.
+- A importância de uma interface de usuário adaptável para melhorar a experiência do usuário em dispositivos variados.

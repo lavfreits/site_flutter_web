@@ -51,9 +51,7 @@ class AdvantagesSection extends StatelessWidget {
             title,
             textAlign: TextAlign.center,
             style: const TextStyle(
-                color: Colors.white,
-                fontSize: 16,
-                fontWeight: FontWeight.bold),
+                color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
           ),
           Text(
             subtitle,
@@ -66,14 +64,12 @@ class AdvantagesSection extends StatelessWidget {
       );
     }
 
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        if (constraints.maxWidth >= mobileBreakPoint)
+    return LayoutBuilder(builder: (context, constraints) {
+      if (constraints.maxWidth >= mobileBreakPoint) {
         return Container(
           padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
           decoration: const BoxDecoration(
-            border: Border(bottom: BorderSide(color: Colors.grey))
-          ),
+              border: Border(bottom: BorderSide(color: Colors.grey))),
           child: Wrap(
             alignment: WrapAlignment.spaceEvenly,
             runSpacing: 16,
@@ -85,22 +81,26 @@ class AdvantagesSection extends StatelessWidget {
             ],
           ),
         );
-        return Container(
-            padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-        decoration: const BoxDecoration(
-        border: Border(bottom: BorderSide(color: Colors.grey))
-        ),
-        child: Row(
-          children: [
-            Expanded(child: buildVerticalAdvantage('+45.000 alunos', 'Didática garantida')),
-            const SizedBox(width: 4),
-            Expanded(child: buildVerticalAdvantage('+45.000 alunos', 'Didática garantida')),
-            const SizedBox(width: 4),
-            Expanded(child: buildVerticalAdvantage('+45.000 alunos', 'Didática garantida')),
-          ],
-        )
-        );
       }
-    );
+      return Container(
+          padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+          decoration: const BoxDecoration(
+              border: Border(bottom: BorderSide(color: Colors.grey))),
+          child: Row(
+            children: [
+              Expanded(
+                  child: buildVerticalAdvantage(
+                      '+45.000 alunos', 'Didática garantida')),
+              const SizedBox(width: 4),
+              Expanded(
+                  child: buildVerticalAdvantage(
+                      '+45.000 alunos', 'Didática garantida')),
+              const SizedBox(width: 4),
+              Expanded(
+                  child: buildVerticalAdvantage(
+                      '+45.000 alunos', 'Didática garantida')),
+            ],
+          ));
+    });
   }
 }
